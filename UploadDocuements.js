@@ -50,17 +50,17 @@ function base64ToPdf(base64String, outputFilePath) {
 app.use('/uploads', express.static('uploads'));
 
 // Configure multer for file storage (if needed, otherwise this can be removed)
-app.get('/file-download', (req, res) => {
-    const fileName = '123.pdf'; // Replace with the actual filename you want to generate the download link for
-    const fileLocation = path.join(__dirname, 'uploads', fileName);
-    const fileUrl = `${req.protocol}://${req.get('host')}/uploads/${fileName}`;
-    res.send({ fileUrl });
-});
+// app.get('/file-download', (req, res) => {
+//     const fileName = '123.pdf'; // Replace with the actual filename you want to generate the download link for
+//     const fileLocation = path.join(__dirname, 'uploads', fileName);
+//     const fileUrl = `${req.protocol}://${req.get('host')}/uploads/${fileName}`;
+//     res.send({ fileUrl });
+// });
 
 // Start the server
-app.listen(port1, () => {
-    console.log(`Server running at http://localhost:${port1}`);
-});
+// app.listen(port1, () => {
+//     console.log(`Server running at http://localhost:${port1}`);
+// });
 
 // Function to perform GET request
 async function get80DCard(policyNo, mobileNumber, email) {

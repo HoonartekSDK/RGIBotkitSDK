@@ -7,7 +7,7 @@ const path = require('path');
 const sdk = require("./lib/sdk");
 
 var Promise = sdk.Promise;
-var port1 = 3000;
+var port1 = 8008;
 var counterFor80D = 0;
 var counterForNCB = 0;
 var countTest = 0;
@@ -175,7 +175,7 @@ module.exports = {
 
                 const uniquesNumber = generateUniqueNumber();
                 const outputFilePath = `./uploads/${uniquesNumber}.pdf`;
-                const generatedFileUrlNow = `https://github.com/HoonartekSDK/RGIBotkitSDK/blob/main/uploads/${uniquesNumber}.pdf`;
+                const generatedFileUrlNow = `https://rgibotkitsdk.onrender.com/uploads/${uniquesNumber}.pdf`;
                 data.context.session.BotUserSession.entities.generatedFileLink = generatedFileUrlNow;
 
                 if (base64String) {
@@ -242,7 +242,7 @@ module.exports = {
 
                 const uniquesNumber = generateUniqueNumber();
                 const outputFilePath = `./uploads/${uniquesNumber}.pdf`;
-                const generatedFileUrlNow = `https://github.com/HoonartekSDK/RGIBotkitSDK/blob/main/uploads/${uniquesNumber}.pdf`;
+                const generatedFileUrlNow = `https://rgibotkitsdk.onrender.com/uploads/${uniquesNumber}.pdf`;
                 data.context.session.BotUserSession.entities.generatedFileLink = generatedFileUrlNow;
                 const base64String = output;
                 if (base64String) {
